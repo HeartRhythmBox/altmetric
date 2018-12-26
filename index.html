@@ -7,42 +7,54 @@
 </head>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Abel|Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abel|Cairo" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 <style>
 
 .gradient {background:linear-gradient(to bottom, #162F72 0%, #16377E 20%, #1D4289 40%, #244E96 60%, 
             #3263A5 80%, #517DBA 100%)}
-.header {font-family: 'Slabo 27px', serif;}
+.textGradient {background: linear-gradient(to right, #ddd 0%, #f2f2f2 50%, white 100%)}
+.header {font-family: 'Cairo', sans-serif;}
 .text {font-family: 'Abel', sans-serif;}
 
-.rank {font-family: 'Slabo 27px', serif;font-size: 5vmax;text-align: center;color:#1D4289;
+.rank {font-family: 'Cairo', sans-serif;font-size: 5vmax;text-align: center;color:#1D4289;
     border-bottom: #1D4289 solid 0.1vmax;width: 100%;margin-top:3vmax}
+.title {font-family: 'Cairo', sans-serif;color:white;margin-left:15%}
+@media only screen and (max-width: 600px) {
+    .title {margin-left: 1vmax}
+}
 .block {font-family: 'Abel', sans-serif;font-size: 2.5vmax;padding: 1vmax;margin-bottom:2vmax}
 
 </style>
 
 <body>
 <!--title-->
-    <div class="w3-row gradient ">
-        <div class="w3-row w3-center w3-mobile" style="margin-top: 3em">
-            <img src="box transparent.png" style="height: 25vh">
+    <div class="w3-row gradient" style="padding: 5vmax 0">
+        <div class="title">
+        <div class="w3-row w3-mobile" 
+        style="font-size:5vmax">2018: Top 20</div>
+        <div class="w3-row w3-mobile" 
+        style="font-size: 2.5vmax;">
+            Most CITED | SHARED | TWEETED | BLOGGED | MENTIONED <br> 
+            Cardiovascular related Articles.</div>
+        <div class="text" style="color:#96B3DD;font-size:2vmax">
+            calculated & ranked by <a href="https://www.altmetric.com/" style="color:white" class="w3-wide">
+            Altmetric</a>
         </div>
-        <div class="w3-row w3-center header w3-mobile w3-text-white" style="margin: 1vmax; font-size:5vmax"> 
-            <b>2018: Top 20</b> </div>
-        <div class="w3-row w3-center text w3-mobile" style="font-size: 2.5vmax;color:#ddd">
-            <b>Most MENTIONED | SHARED | POSTED <br> Cardiovascular related Articles.</b><br>
-            as ranked by <a href="https://www.altmetric.com/">Altmetric</a>
-        </div>
-         
         
-        <div class="w3-content w3-center w3-mobile header" 
-        style="font-size: 2vmax;margin-top: 2vmax;color:rgb(192, 192, 192);padding-bottom: 2vmax">
+        
+        <div class="w3-row w3-mobile text" 
+        style="font-size: 2vmax;margin-top: 2vmax;color:#96B3DD;padding-bottom: 1.8vmax">
             <a href="https://www.facebook.com/HeartRhythmBox/" style="text-decoration:none">
                 <i title="@HeartRhythmBox" class="fab fa-facebook w3-hover-opacity" 
-                style="color:#303030; border: transparent;"></i>
-            <span>&thinsp;HeartRhythmBox</a></span>
+                style="color:#96B3DD; border: transparent;"></i>
+            <span>@HeartRhythmBox</a></span>
+            <span>&ThickSpace;| 
+            <a href="https://heartrhythmbox.github.io/main/" style="text-decoration:none">
+            <img src="box transparent.png" style="height: 5vh"> main page</a>
+            </span>
+        </div>
         </div>
            
     </div>
@@ -51,12 +63,18 @@
     <!--no 1 lancet1-->
     <div class="w3-container w3-center header rank">1</div>
     <div class="w3-row block w3-mobile">
-        <div class="w3-col s6 m4 l3 w3-mobile w3-center" style="padding: 1vmax">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
             <div data-badge-details="right" data-badge-type="large-donut" 
                 data-altmetric-id="46611367" 
                 data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+                <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                style="font-size:1.5vmax;text-decoration:none;">
+                <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                <span style="color:#96B3DD">about this score</span>
+                </a></div>
         </div>
-        <div class="w3-col s6 m8 l9 w3-mobile" style="text-align: left;">
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
                 <b>Title</b>
                 Dietary carbohydrate intake and mortality: a prospective cohort study and meta-analysis<br>
                 <b>Published in	</b>
@@ -70,12 +88,18 @@
     <!--no 2 jama1-->
     <div class="w3-container w3-center header rank">2</div>
     <div class="w3-row w3-mobile block">
-        <div class="w3-col s6 m4 l3 w3-mobile w3-center" style="padding: 1vmax">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
             <div data-badge-details="right" data-badge-type="large-donut" 
                 data-altmetric-id="33436659" 
                 data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
         </div>
-        <div class="w3-col s6 m8 l9 w3-mobile" style="text-align: left;">
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
                 <b>Title</b>
                 Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion<br>
                 <b>Published in	</b>
@@ -86,138 +110,263 @@
         </div>
     </div>
 
+    <!--no 3 jama2-->
+    <div class="w3-container w3-center header rank">3</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="44405677" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                Association of Coffee Drinking With Mortality by Genetic Variation in Caffeine Metabolism<br>
+                <b>Published in	</b>JAMA Internal Medicine, August 2018
+                <br>
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/29971434" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 1 lancet1-->
-<h3>1</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=46611367" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 4 jama3-->
+    <div class="w3-container w3-center header rank">4</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="34723948" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                The Proposal to Lower P Value Thresholds to .005<br>
+                <b>Published in	</b>	
+                JAMA: Journal of the American Medical Association, March 2018
+                <br>
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/29566133" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 2 jama1-->
-<h3>2</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=33436659" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 5 nejm1-->
+    <div class="w3-container w3-center header rank">5</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="48489005" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                Effect of Aspirin on Disability-free Survival in the Healthy Elderly<br>
+                <b>Published in	</b>	
+                New England Journal of Medicine, October 2018
+                <br>
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/30221596" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 3 jama2-->
-<h3>3</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=44405677" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 6 cir1-->
+    <div class="w3-container w3-center header rank">6</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="40130931" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                Impact of Healthy Lifestyle Factors on Life Expectancies in the US Population<br>
+                <b>Published in	</b>	
+                	Circulation, July 2018
+                <br>
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/29712712" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 4 jama3-->
-<h3>4</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=34723948" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 7 jama4 32695716-->
+    <div class="w3-container w3-center header rank">7</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="32695716" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                Vitamin and Mineral Supplements<br>
+                <b>Published in	</b>	
+                JAMA: Journal of the American Medical Association, March 2018
+                <br>
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/29404568" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 5 nejm1-->
-<h3>5</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=48489005" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 8 nejm2 48489010-->
+    <div class="w3-container w3-center header rank">8</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="48489010" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title </b>Effect of Aspirin on All-Cause Mortality in the Healthy Elderly
+                <br>
+                <b>Published in	</b>New England Journal of Medicine, October 2018                
+                <br>
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/30221595" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 6 cir1-->
-<h3>6</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=40130931" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 9 nejm3 32195682-->
+    <div class="w3-container w3-center header rank">8</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                <br>
+                <b>Published in	</b>	
+                
+                <br>
+                <a href="" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 7 jama4-->
-<h3>7</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=32695716" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 10 cir2 31402176-->
+    <div class="w3-container w3-center header rank">8</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                <br>
+                <b>Published in	</b>	
+                
+                <br>
+                <a href="" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
-<!--no 8 nejm2-->
-<h3>8</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=48489010" 
-style="height:50vh;width:90vw;"></iframe>
-
-
-<!--no 9 nejm3-->
-<h3>9</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=32195682" 
-style="height:50vh;width:90vw;"></iframe>
-
-<!--no 10 cir2-->
-<h3>10</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=31402176" 
-style="height:50vh;width:90vw;"></iframe>
-
-<!--no 11 lancet2-->
-<h3>11</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=42857252" 
-style="height:50vh;width:90vw;"></iframe>
-
-<!--no 12 jama5-->
-<h3>12</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=49943729" 
-style="height:50vh;width:90vw;"></iframe>
-
-<!--no 13 nejm4-->
-<h3>13</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=34240518" 
-style="height:50vh;width:90vw;"></iframe>
-
-<!--no 14 jama6-->
-<h3>14</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=35364549" 
-style="height:50vh;width:90vw;"></iframe>
-
-<!--no 15 nejm5-->
-<h3>15</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=51057979" 
-style="height:50vh;width:90vw;"></iframe>
-
-<!--no 16 jama7-->
-<h3>16</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=32475667" 
-style="height:50vh;width:90vw;"></iframe> 
-
-<!--no 17 lancet3-->
-<h3>17</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=46334035" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 11 lancet2 42857252-->
+    <div class="w3-container w3-center header rank">8</div>
+    <div class="w3-row w3-mobile block">
+        <div class="w3-col s6 m6 l3 w3-mobile w3-center" style="padding: 1vmax">
+            <div data-badge-details="right" data-badge-type="large-donut" 
+                data-altmetric-id="" 
+                data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+            <div style="margin:1vmax">
+                <a href="https://www.altmetric.com/" 
+                    style="font-size:1.5vmax;text-decoration:none;">
+                    <i class="fas fa-question-circle" style="color:#517DBA"></i>
+                    <span style="color:#96B3DD">about this score</span>
+                </a></div>
+        </div>
+        <div class="w3-col s6 m6 l9 w3-mobile textGradient" style="text-align: left;padding:1vmax">
+                <b>Title</b>
+                <br>
+                <b>Published in	</b>	
+                
+                <br>
+                <a href="" style="font-size: 1.5vmax" target="_blank">
+                    link to Pubmed    
+                </a>
+        </div>
+    </div>
 
 
-<!--no 18 nejm6-->
-<h3>18</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=43680457" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 12 jama5 49943729-->
 
-<!--no 19 nejm7-->
-<h3>19</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=47103777" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 13 nejm4 34240518-->
 
-<!--no 20 cir3-->
-<h3>20</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=33944493" 
-style="height:50vh;width:90vw;"></iframe>
+    <!--no 14 jama6 35364549-->
 
+    <!--no 15 nejm5 51057979-->
+
+    <!--no 16 jama7 32475667-->
+
+    <!--no 17 lancet3 46334035-->
+
+    <!--no 18 nejm6 43680457-->
+
+    <!--no 19 nejm7 47103777-->
+
+    <!--no 20 cir3 33944493-->
 
 
 
-<!--h1>JAMA</h1-->
+
+
 <!--https://api.altmetric.com/v1/citations/1y?num_results=100&doi_prefix=10.1001%27-->
-
-<!--h1>Circulation</h1-->
 <!--https://api.altmetric.com/v1/citations/1y?num_results=100&doi_prefix=10.1161%27-->
-<!--h3>4</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=34724781" 
-style="height:50vh;width:90vw;"></iframe>
-<h1>Lancet/JACC</h1-->
-<!--https://api.altmetric.com/v1/citations/1y?num_results=100&doi_prefix=10.1016%27-->
-<!--https://api.altmetric.com/v1/citations/1y?num_results=100&doi_prefix=10.1016%27-->
-<!--
-<h1>NEJM</h1>
-<h3>8</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=47106887" 
-style="height:50vh;width:90vw;"></iframe>
-
-<h3>9</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=51057998" 
-style="height:50vh;width:90vw;"></iframe>
-
-<h3>10</h3>
-<iframe src="http://www.altmetric.com/details.php?citation_id=33747441" 
-style="height:50vh;width:90vw;"></iframe>
--->
-
 
 </body>
 
